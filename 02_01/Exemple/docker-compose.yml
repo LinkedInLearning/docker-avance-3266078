@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  webapp:
+    build:
+      context: ./dir
+  db:
+    image: mysql: 8
+    networks:
+    - new
+    - legacy
+
+networks:
+  new:
+  legacy:
