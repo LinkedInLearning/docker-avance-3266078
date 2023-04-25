@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  webapp1:
+    build: ./dir
+  webapp2:
+    build:
+      context: ./dir
+      dockerfile: Dockerfile-alternate
+    labels:
+    - "com.example.description=Application Web"
+    - "com.example.department=Finance"
+    ports:
+    - "8080:80"
+    - "3000"
+    - "9090-9091:8080-8081"
+    - "127.0.0.1:8001:8001"
+    - "6060:6060/udp"
+
+  mysql:
+
+  mysql:
+    image: mysql
