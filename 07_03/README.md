@@ -1,19 +1,18 @@
-# Liens sites
+# Liens 
+
+## Site officiel
 
 Site officiel Mirantais Certification : Docker Certified Associate (DCA) 
 
 http://training.mirantis.com/dca-certification-exam/
 
+## Préparation
+
+### Docker Certified Associate Exam Preparation Guide 
+
+https://github.com/Evalle/DCA
 
 
+### 250 Practice Questions for the DCA Exam
 
-**Nom du formateur** 
-
- Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
-
-[0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https:
-[lil-URL-trainer]: https://
-
-[1]: # (End of FR-Instruction ###############################################################################################)
+https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-the-dca-exam-84f3b9e8f5ce
