@@ -1,0 +1,3 @@
+Does this command stream all container activity in the Docker engine?
+
+docker system logs

@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+  app1:
+    image: nginx:1.23
+    deploy:
+      mode: global
+
+  app2:
+    image: alpine:3.17
+    command: ["sleep","3600"]
+    deploy:
+      replicas: 3
+

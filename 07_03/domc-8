@@ -1,0 +1,3 @@
+Is this the main difference between a Docker container and a virtual machine?
+
+Docker containers share the same kernel from the host; each virtual machine runs its own kernel.

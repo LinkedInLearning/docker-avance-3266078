@@ -1,0 +1,10 @@
+version: "3.5"
+
+services:
+  web:
+    image: nginx:${TAG}
+    ports:
+    - "${PORT}:80"
+
+    env_file:
+    - .environment/${ENVIRONMENT}/env

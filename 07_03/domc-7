@@ -1,0 +1,4 @@
+Will this command increase the number of replicas to five for a service named 'http'?
+
+docker service scale http=5
+

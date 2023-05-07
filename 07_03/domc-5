@@ -1,0 +1,4 @@
+A server is running low on disk space.
+Can this command be used to check the disk usage of images, containers, and volumes for Docker engine?
+
+docker system prune

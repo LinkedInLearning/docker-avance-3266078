@@ -1,0 +1,36 @@
+version: "3.5"
+services:
+  web:
+    image: nginx:alpine
+    volumes:
+      - type: volume
+        source: mydata
+        target: /data
+      - type: bind
+        source: ./static
+        target: /opt/app/static
+  db:
+    image: postgres:latest
+    volumes:
+    - data:/var/lib/postgresql/data
+    - /datas:/datas
+    - ./db_data:/db_data
+
+volumes:
+  mydata:
+  data:
+    external: true
+  shared_vol:
+    driver_opts:
+      type: "nfs"
+      o: "addr=192.168.98.1,soft,rw"
+      device: ":/shares"
+  cache:
+    driver_opts:
+      type: "tmpfs"
+      o: "size=100m,uid=1000"
+      device: "tmpfs"
+  sdb1:
+    driver_opts:
+      type: "xfs"
+      device: "/dev/sdb1"

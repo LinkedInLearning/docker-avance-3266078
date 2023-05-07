@@ -1,0 +1,10 @@
+The '-P' option is being used when creating a new container.
+Is this statement correct?
+
+- Docker binds each port marked for exposure in the Dockerfile to a random port on the host's interfaces.
+- Docker binds each exposed container port to a random port on a specified host interface.
+- Docker gives extended privileges to the container
+- Docker binds each exposed container port with the same port on the host.
+
+Choose 1 option.
+

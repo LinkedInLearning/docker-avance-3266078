@@ -1,0 +1,42 @@
+version: "3.5"
+
+services:
+  nginx:
+    image: nginx:1.23
+    networks:
+    - app_net
+    volumes:
+    - data:/usr/share/nginx/html
+    deploy:
+      mode: global
+
+  app:
+    image: alpine:3.17
+    command: ["/bin/sh","-c","while true; do echo `hostname`  `date` >> /mnt/index.html ; sleep 10 ; echo '-------- ' >> /mnt/index.html ; done"]
+    networks:
+    - app_net
+    volumes:
+    - data:/mnt
+    deploy:
+      replicas: 6
+      placement:
+        constraints:
+        - "node.role==manager"
+      update_config:
+        parallelism: 2
+        delay: 10s
+
+
+networks:
+  app_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.21.0.0/16"
+
+volumes:
+  data:
+    driver_opts:
+      type: "nfs"
+      o: "addr=192.168.98.1,rw"
+      device: ":/shares"

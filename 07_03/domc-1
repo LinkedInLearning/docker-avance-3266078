@@ -1,0 +1,4 @@
+A server used to build Docker images has run out of disk space, caused by a large number of dangling images on the server.
+Will this command remove the dangling images?
+
+docker container prune

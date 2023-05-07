@@ -1,0 +1,4 @@
+Does this command enable swarm mode in
+Docker?
+
+docker service swarm  --start

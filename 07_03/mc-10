@@ -1,0 +1,9 @@
+Which port does this command publish, and where?
+'docker service create --name my-web -publish 8080:80 -replicas 2 nginx*
+
+- port 80 in the 'nginx container to port 8080 for any node in the swarm
+- port 80 in the 'nginx container to port 8080 for ONLY that node in the swarm
+- port 8080 in the 'nginx container to port 80 for ONLY that node in the swarm 
+- port 8080 in the 'nginx container to port 80 for any node in the swarm
+
+Choose 1 option.

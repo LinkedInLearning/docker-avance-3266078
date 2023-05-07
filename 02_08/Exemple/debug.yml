@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+  debug:
+    image: alpine:3.13
+    command: ["/bin/ping","db"]
+    networks:
+    - app_net
+
+networks:
+  app_net:
+    external: true

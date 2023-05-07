@@ -1,23 +1,31 @@
-version: "3.9"
+version: "3.5"
 
 services:
   webapp1:
     build: ./dir
+    depends_on:
+    - db
+    - webapp2
   webapp2:
     build:
       context: ./dir
       dockerfile: Dockerfile-alternate
-    labels:
-    - "com.example.description=Application Web"
-    - "com.example.department=Finance"
+      labels:
+      - "com.example.description=Application Web"
+      - "com.example.department=Finance"
     ports:
     - "8080:80"
     - "3000"
     - "9090-9091:8080-8081"
     - "127.0.0.1:8001:8001"
     - "6060:6060/udp"
-
-  mysql:
-
-  mysql:
-    image: mysql
+  db:
+    image: mysql:8
+    expose:
+    - "3306"
+    logging:
+      driver: "json-file"
+  backup:
+    image: alpine:3.17
+    container_name: sauvegarde
+    command: ["/bin/sh","-c","tar cf /mnt/mysql.tar /etc"]

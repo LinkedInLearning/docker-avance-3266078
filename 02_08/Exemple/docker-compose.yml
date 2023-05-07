@@ -1,0 +1,29 @@
+version: "3.5"
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+    - 80:80
+    networks:
+    - app_net
+    volumes:
+    - data:/usr/share/nginx/html
+  db:
+    image: mariadb:10.8
+    env_file: 
+    - .mariadb
+    networks:
+    - app_net
+    volumes:
+    - data:/var/lib/mysql
+
+networks:
+  app_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.21.0.0/16"
+
+volumes:
+  data:

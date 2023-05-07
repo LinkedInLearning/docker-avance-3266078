@@ -1,0 +1,4 @@
+Will this command update the image used for a service named myservice from nginx:v1 to nginx:V2?
+
+docker service update --image nginx:v1 nginx:v2 myservice
+
