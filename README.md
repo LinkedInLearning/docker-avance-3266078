@@ -13,7 +13,6 @@ DESCRIPTION DE LA FORMATION
 2. Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
 3. [Instructions spécifiques au cours] 
 
-
 ### Formateur
 
 **Nom du formateur** 
