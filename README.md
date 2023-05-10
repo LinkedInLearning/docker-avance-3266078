@@ -11,7 +11,9 @@ DESCRIPTION DE LA FORMATION
 1. Pour utiliser ces fichiers d’exercice, vous avez besoin : 
    - Soit de créer une machine virtuelle Centos 7 sur votre hyperviseur local
    - Soit d'utiliser Vagrant pour créer une machine virtuelle 
-2. Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
+2. Pour le cluster SWARM, vous avez besoin :
+   - De créer 3 machines virtuelles Centos 7 connectées sur le même réseau
+3. Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
 
 ### Formateur
 
