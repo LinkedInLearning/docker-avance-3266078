@@ -4,7 +4,7 @@ Ce dossier Repository est lié au cours `Docker Avancé`. Le cours entier est di
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
+Dans cette formation qui s'adresse aux administrateurs et chefs de projets, Samir Lakhdari vous propose de vous pencher sur l'exploitation avancée de la plateforme d'applications en conteneur Docker avec Mirantis Container Runtime (MCR). Après avoir abordé les grandes lignes de MCR, vous procèderez à son installation, aussi bien sur Linux que Windows Server, et vous passerez à la création d'applications multi-conteneurs. Vous verrez comment créer puis gérer un cluster et des services SWARM, vous apprendrez à gérer Docker avec une architecture UCP et vous mettrez en place une architecture DTR. Le cours se conclura sur la méthode de certification DCA.
 
 ## Installation
 
