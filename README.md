@@ -22,8 +22,8 @@ Dans cette formation qui s'adresse aux administrateurs et chefs de projets, Sami
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
-[lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https:
+[lil-course-url]: https://www.linkedin.com/learning/docker-avance
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQFzznbBJr4CnA/learning-public-crop_675_1200/0/1687941905960?e=2147483647&v=beta&t=AqtLMDIC4pvyWjsKwORhy3TLFXUVwkTm3ZrRK9Chhog
 [lil-URL-trainer]: https://www.linkedin.com/learning/instructors/samir-lakhdari
 
 [1]: # (End of FR-Instruction ###############################################################################################)
